@@ -1,0 +1,22 @@
+.header {
+    padding: 2rem;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    background-image: url('../assets/bg-plant-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.header__title {
+    padding-left: 2rem;
+}
+
+.header__logo {
+    height: 45px;
+    width: 45px;
+}

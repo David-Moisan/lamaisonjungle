@@ -1,0 +1,42 @@
+.shopping {
+    padding: 2rem;
+    width: 100%;
+}
+
+.shopping__category {
+    list-style-type: none;
+}
+
+
+.shopping-card {
+    position: relative;   
+}
+
+.shopping__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.shopping__item {
+    border: 2px solid black;
+    border-radius: 0.8125rem;
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.shopping__sales {
+    position: absolute;
+    right: 0;
+    top: 0.625rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    background-color: #31b572;
+}

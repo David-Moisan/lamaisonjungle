@@ -1,0 +1,21 @@
+.categories {
+    text-align: center;
+    padding-top: 2.125rem;
+}
+
+.categories__select {
+    margin-right: 0.94rem;
+}
+
+.categories > button {
+    background-color: #31b472;
+    border: none;
+    border-radius: 0.21rem;
+    padding: 0.21rem;
+    color: white;
+    cursor: pointer;
+}
+
+.categories > button:hover {
+    background-color: #2a9660;
+}

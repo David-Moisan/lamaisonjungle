@@ -1,0 +1,49 @@
+.item__cover {
+    height: 14.5625rem;
+    width: 14.5625rem;
+    border-radius: 1.3125rem;
+    mix-blend-mode: color;
+}
+
+.item__price {
+    position: absolute;
+    border-radius: 21px 21px 21px 0;
+    background-color: #31b472;
+    color: white;
+    padding: 0.94rem;
+    right: 0;
+    top: 0;
+    font-weight: 500;
+    z-index: 99;
+}
+
+.plant__item {
+    padding: 0.55rem;
+    margin: 0.55rem;
+    border-radius: 1.3125rem 1.3125rem 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-weight: 700;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.5);
+    position: relative;
+}
+
+.item__infos {
+    cursor: pointer !important;
+}
+
+.btn-add {
+    background-color: #31b472;
+    padding: 0.55rem;
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 1.3125rem;
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  color: #000;
+}
+
+.page-inner {
+  display: flex;
+
+  /* background-image: url('../assets/bg-plant-body.jpg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll; */
+}

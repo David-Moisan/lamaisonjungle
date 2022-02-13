@@ -1,0 +1,91 @@
+.cart {
+    border-right: solid 3px #31b472;
+    width: 14.5625rem;
+    min-height: 200vh;
+    background-color: #31b472;
+    color: white;
+    padding: 2rem 0.89rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cart__details > h2,
+.cart__details > h3 {
+    margin-bottom: 1.5rem;
+}
+
+.cart__list {
+  margin-bottom: 0.89rem;
+}
+
+.cart__closed {
+  position: relative;
+}
+
+.cart__amount {
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  padding: 0.55rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: rgb(235, 48, 48);
+  font-weight: 900;
+  color: white;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*! Button Rules */
+.btn-open {
+  cursor: pointer;
+  font-size: 1.618rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0.89rem;
+  background-color: #31b472;
+  padding: 1.25rem;
+  color: white;
+}
+
+.btn-open:hover {
+  background-color: #2a9660;
+  transition: all 0.21s ease-in-out;
+}
+
+.btn-close {
+  cursor: pointer;
+  border: none;
+  font-size: 1.618rem;
+  align-self: self-start;
+  border-radius: 50%;
+  padding: 0.34rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.btn-close:hover {
+    color: white;
+    transition: color .21s ease-in-out;
+}
+
+.btn-remove {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-remove > p {
+  margin-left: 0.34rem;
+}
