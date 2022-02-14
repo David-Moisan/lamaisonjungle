@@ -13,7 +13,6 @@ export default function Cart({ cart, updateCart }) {
     (acc, plantType) => acc + plantType.amount,
     0
   );
-  console.log(totalQuantity);
 
   useEffect(() => {
     document.title = `LMJ: ${total}€ d'achats`
