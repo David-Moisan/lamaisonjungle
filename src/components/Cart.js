@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Card.css";
 
 export default function Cart({ cart, updateCart }) {
@@ -7,10 +7,17 @@ export default function Cart({ cart, updateCart }) {
   const total = cart.reduce(
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
-    );
-    
-  const totalQuantity = cart.reduce((acc, plantType) => acc + plantType.amount, 0);
-  console.log(totalQuantity)
+  );
+
+  const totalQuantity = cart.reduce(
+    (acc, plantType) => acc + plantType.amount,
+    0
+  );
+  console.log(totalQuantity);
+
+  useEffect(() => {
+    document.title = `LMJ: ${total}€ d'achats`
+  }, [total]);
 
   return isOpen ? (
     <div className="cart">
@@ -29,7 +36,8 @@ export default function Cart({ cart, updateCart }) {
           </ul>
           <h3>Total :{total}€</h3>
           <button onClick={() => updateCart([])} className="btn-remove">
-            <i className="fa fa-trash"></i><p>Vider le panier</p> 
+            <i className="fa fa-trash"></i>
+            <p>Vider le panier</p>
           </button>
         </div>
       ) : (
